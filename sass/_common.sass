@@ -233,7 +233,39 @@ body
 		margin-top: 13px
 		font-size: 24px
 	.send__forminput
+		width: 212px
+		padding: 14px 20px 8px
+		margin-top: 11px
+		margin-bottom: 20px
+		display: block
+		background: #DFF2FF 
+		+gd(160deg, #fff,#d7efff)
+		border: 1px solid #f2f5f6
+		+border-radius(10px)
+		font-size: 12px
+		color: $blue
+		+placeholder-color($blue)
+		+box-shadow(inset 4px 4px 4px rgba(#5f6c79, .4))
+		&:focus
+			+placeholder-color(transparent)
 	.send__formbtn
+		padding: 5px 13px
+		display: block
+		font-size: 28px
+		color: #5F6C79
+		text-transform: uppercase
+		text-decoration: none
+		background: #f44c4c
+		+gd(160deg, #eb4343, #fe5656)
+		+border-radius(10px)
+		+box-shadow(5px 5px 5px rgba(#000, .2))
+		text-align: center
+		color: #fff
+		&:hover
+			+gd(160deg, #fe5656, #eb4343)
+		&:active
+			position: relative
+			top: 1px
 // counter
 // --------------------------------------------------
 .counter
