@@ -2,30 +2,127 @@
 // --------------------------------------------------
 
 // Fonts
+
 // --------------------------------------------------
++font(MyriadPro-Cond,MyriadPro-Cond)
+=font
+	font-family: "MyriadPro-Cond", arial, sans-serif
 
-// Variables & mixins & extend
+$blue: #2a445e
+// ico
 // --------------------------------------------------
-// $color-red: red
-// $color-blue: blue
+.ico
+	display: inline-block
+	vertical-align: middle
 
-// etc
-
+.i-tel
+	+s(i-tel)
+.i-car
+	+s(i-car)
 // Common blocks
 // --------------------------------------------------
 body
+	min-width: 1120px 
 	font-size: 14px 
-	font-family: Arial, sans-serif 
 	line-height: 1.4
+	overflow: hidden
+	+font
 
-// Headings
-// --------------------------------------------------
+.wrap
+	width: 1120px
+	margin-left: auto
+	margin-right: auto
 
 // Nav
 // --------------------------------------------------
 
 // Header
 // --------------------------------------------------
+.header
+	height: 356px
+	background: url('../img/header_bg.jpg')
+	+cover
+	+clr
+	.wrap
+		position: relative
+	.header__contact
+		width: 295px
+		margin-top: 9px
+		margin-right: 18px
+		float: right
+		text-align: right
+	.header__tel
+		line-height: 1
+	.header__telsmall
+		margin-left: 8px
+		font-size: 30px
+		display: inline-block
+		vertical-align: middle
+	.header__telbig
+		margin-left: 8px
+		font-size: 48px
+		color: #3b4556
+		display: inline-block
+		vertical-align: middle
+	.header__sendcall
+		height: 31px
+		line-height: 35px
+		padding: 2px 24px
+		margin-bottom: 6px
+		letter-spacing: 0.15em
+		display: inline-block
+		background: #31a2aa
+		+gd(160deg, #22939b, #3eafb7)
+		+box-shadow(3px 3px 3px rgba(#3f89e6, .3))
+		+border-radius(13px)
+		font-size: 20px
+		color: #FFF
+		text-align: center
+		text-transform: uppercase
+		text-decoration: none
+		&:hover
+			+gd(160deg, #3eafb7, #22939b)
+		&:active
+			position: relative
+			top: 1px
+	.header__addr
+		p,a
+			font-size: 14px
+			letter-spacing: 0.02em
+			line-height: 1
+			text-decoration: none 
+			color: #3a4657
+	.header__distance
+		position: absolute
+		top: 104px
+		right: 287px
+		font-size: 32px
+		color: $blue
+		.i-car
+			margin-left: 30px
+	.header__logo
+		+s(logo2)
+		position: absolute
+		top: -25px
+		left: -45px
+		+hide-text
+		&:before
+			content: ""
+			width: 10000px
+			height: 9px
+			background: $blue
+			position: absolute
+			top: 176px
+			left: -9860px
+		&:after
+			content: ""
+			width: 10000px
+			height: 9px
+			background: $blue
+			position: absolute
+			top: 176px
+			right: -9782px
+
 
 // Footer
 // --------------------------------------------------

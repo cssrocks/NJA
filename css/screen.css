@@ -18,7 +18,34 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
+@font-face { font-family: MyriadPro-Cond; src: url("../fonts/MyriadPro-Cond.eot"); src: url("../fonts/MyriadPro-Cond.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Cond.woff") format("woff"), url("../fonts/MyriadPro-Cond.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+.ico { display: inline-block; vertical-align: middle; }
+
+.i-tel { background: url('../img/icons-sc2b981989d.png') 0 -2208px no-repeat; width: 28px; height: 28px; }
+
+.i-car { background: url('../img/icons-sc2b981989d.png') 0 -2176px no-repeat; width: 52px; height: 22px; }
+
+body { min-width: 1120px; font-size: 14px; line-height: 1.4; overflow: hidden; font-family: "MyriadPro-Cond", arial, sans-serif; }
+
+.wrap { width: 1120px; margin-left: auto; margin-right: auto; }
+
+.header { height: 356px; background: url("../img/header_bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; *zoom: 1; }
+.header:after { content: " "; display: table; clear: both; }
+.header .wrap { position: relative; }
+.header .header__contact { width: 295px; margin-top: 9px; margin-right: 18px; float: right; text-align: right; }
+.header .header__tel { line-height: 1; }
+.header .header__telsmall { margin-left: 8px; font-size: 30px; display: inline-block; vertical-align: middle; }
+.header .header__telbig { margin-left: 8px; font-size: 48px; color: #3b4556; display: inline-block; vertical-align: middle; }
+.header .header__sendcall { height: 31px; line-height: 35px; padding: 2px 24px; margin-bottom: 6px; letter-spacing: 0.15em; display: inline-block; background: #31a2aa; background-image: -webkit-linear-gradient(160deg, #22939b, #3eafb7); background-image: -moz-linear-gradient(160deg, #22939b, #3eafb7); background-image: -o-linear-gradient(160deg, #22939b, #3eafb7); background-image: linear-gradient(160deg, #22939b, #3eafb7); -webkit-box-shadow: 3px 3px 3px rgba(63, 137, 230, 0.3); -moz-box-shadow: 3px 3px 3px rgba(63, 137, 230, 0.3); box-shadow: 3px 3px 3px rgba(63, 137, 230, 0.3); -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px; font-size: 20px; color: white; text-align: center; text-transform: uppercase; text-decoration: none; }
+.header .header__sendcall:hover { background-image: -webkit-linear-gradient(160deg, #3eafb7, #22939b); background-image: -moz-linear-gradient(160deg, #3eafb7, #22939b); background-image: -o-linear-gradient(160deg, #3eafb7, #22939b); background-image: linear-gradient(160deg, #3eafb7, #22939b); }
+.header .header__sendcall:active { position: relative; top: 1px; }
+.header .header__addr p, .header .header__addr a { font-size: 14px; letter-spacing: 0.02em; line-height: 1; text-decoration: none; color: #3a4657; }
+.header .header__distance { position: absolute; top: 104px; right: 287px; font-size: 32px; color: #2a445e; }
+.header .header__distance .i-car { margin-left: 30px; }
+.header .header__logo { background: url('../img/icons-sc2b981989d.png') 0 -297px no-repeat; width: 753px; height: 287px; position: absolute; top: -25px; left: -45px; font: 0/0 a; text-shadow: none; color: transparent; }
+.header .header__logo:before { content: ""; width: 10000px; height: 9px; background: #2a445e; position: absolute; top: 176px; left: -9860px; }
+.header .header__logo:after { content: ""; width: 10000px; height: 9px; background: #2a445e; position: absolute; top: 176px; right: -9782px; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
