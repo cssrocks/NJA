@@ -587,16 +587,16 @@ body
 		font-size: 34px
 		color: $blue 
 		text-align: center
-		position: relative
-		&:before
-			content: ""
-			+s(i-map)
-			position: absolute
-			top: 0px
 		span
-			padding-left: 100px
 			margin-top: 5px
 			display: inline-block
+			position: relative
+			&:before
+				content: ""
+				+s(i-map)
+				position: absolute
+				left: -100px
+				top: 0px
 	.map__in
 		width: 870px
 		height: 340px
@@ -628,18 +628,18 @@ body
 	.slider__top
 		height: 108px
 		line-height: 108px
-		position: relative
 		text-align: center
-		&:before
-			content: ""
-			+s(i-photo)
-			position: absolute
-			top: 15px
 		span
-			padding-left: 100px
 			display: inline-block
 			font-size: 34px
-			color: $blue 
+			color: $blue
+			position: relative
+			&:before
+				content: ""
+				+s(i-photo)
+				position: absolute
+				top: 15px
+				left: -100px
 	.slider__container
 		width: 1026px
 		margin-left: auto

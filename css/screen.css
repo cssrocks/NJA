@@ -176,9 +176,9 @@ body { min-width: 1120px; font-size: 14px; line-height: 1.4; overflow-x: hidden;
 .reserv { font-size: 22px; color: #2a445e; }
 .reserv .input { margin: 5px 0 8px; }
 
-.map .map__top { height: 115px; line-height: 115px; font-size: 34px; color: #2a445e; text-align: center; position: relative; }
-.map .map__top:before { content: ""; background: url('../img/icons-s78d211e015.png') 0 -1029px no-repeat; width: 96px; height: 94px; position: absolute; top: 0px; }
-.map .map__top span { padding-left: 100px; margin-top: 5px; display: inline-block; }
+.map .map__top { height: 115px; line-height: 115px; font-size: 34px; color: #2a445e; text-align: center; }
+.map .map__top span { margin-top: 5px; display: inline-block; position: relative; }
+.map .map__top span:before { content: ""; background: url('../img/icons-s78d211e015.png') 0 -1029px no-repeat; width: 96px; height: 94px; position: absolute; left: -100px; top: 0px; }
 .map .map__in { width: 870px; height: 340px; margin-bottom: 20px; margin-left: auto; margin-right: auto; }
 .map .map__row { *zoom: 1; }
 .map .map__row:after { content: " "; display: table; clear: both; }
@@ -189,9 +189,9 @@ body { min-width: 1120px; font-size: 14px; line-height: 1.4; overflow-x: hidden;
 .map .map__labelcontent { font-size: 14px; }
 
 .slider { padding-bottom: 40px; }
-.slider .slider__top { height: 108px; line-height: 108px; position: relative; text-align: center; }
-.slider .slider__top:before { content: ""; background: url('../img/icons-s78d211e015.png') 0 -1757px no-repeat; width: 85px; height: 70px; position: absolute; top: 15px; }
-.slider .slider__top span { padding-left: 100px; display: inline-block; font-size: 34px; color: #2a445e; }
+.slider .slider__top { height: 108px; line-height: 108px; text-align: center; }
+.slider .slider__top span { display: inline-block; font-size: 34px; color: #2a445e; position: relative; }
+.slider .slider__top span:before { content: ""; background: url('../img/icons-s78d211e015.png') 0 -1757px no-repeat; width: 85px; height: 70px; position: absolute; top: 15px; left: -100px; }
 .slider .slider__container { width: 1026px; margin-left: auto; margin-right: auto; position: relative; }
 .slider .slider__right, .slider .slider__left { position: absolute; top: 50%; margin-top: -22px; }
 .slider .slider__right.disabled, .slider .slider__left.disabled { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20); opacity: 0.2; }
